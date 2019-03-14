@@ -15,3 +15,15 @@
 * in which your solution might not work.
 ===================================================
 """
+list_input = input("Enter a list elements separated by comma: ")
+list_user = list_input.split(",")
+even = 0
+odd = 0
+for i in range(0, len(list_user)):
+    if int(list_user[i]) % 2 == 0:
+        even += 1
+    else:
+        odd += 1
+
+print("Number of odd numbers in your list is: ", odd)
+print("Number of even numbers in your list is: ", even)
